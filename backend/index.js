@@ -13,7 +13,10 @@ const PORT = process.env.PORT || 5000;
 
 // middlewares (MUST be before routes)
 app.use(cors(
-  { origin: true, // Adjust as needed
+  {  origin: ['https://hire-wire-ht817qhmz-sheetal-s-projects-25062932.vercel.app',
+    'http://localhost:5173',
+    'https://hire-wire-two.vercel.app'
+  ],// Adjust as needed
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   }
